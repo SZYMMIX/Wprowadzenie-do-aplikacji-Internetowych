@@ -1,0 +1,21 @@
+body {
+    background-color: #B77466;
+}
+
+img {
+    height: auto;
+    width: 15vw;
+    border-radius: 4px;
+}
+
+header p {
+    font-weight: bold;
+}
+
+article p {
+    color: #e1b99fe1;
+}
+
+header h1 {
+    color: #44392edb;
+}

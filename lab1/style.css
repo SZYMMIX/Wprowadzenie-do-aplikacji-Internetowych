@@ -6,6 +6,7 @@ html {
 body {
       height: 100vh;
       margin: 0;
+      padding: 20px;
 }
 
 .main-container {
@@ -22,4 +23,13 @@ a {
 
 a:visited {
       color: black
+}
+
+header {
+      display: flex;
+      justify-content: center;
+}
+
+main {
+      display: flex;
 }
