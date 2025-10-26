@@ -4,10 +4,31 @@ body {
 }
 table {
     border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.13); 
 }
 
-table, th, td {
+th, td {
     border: 1px solid black;
     padding: 5px;
 }
 
+thead th {
+    background-color: #982300;
+    color: #ffffff;
+}
+
+tbody tr:hover {
+    background-color: #e0e0e02c;
+}
+
+td:nth-child(1), th:nth-child(1),
+td:nth-child(3), th:nth-child(3), 
+td:nth-child(4), th:nth-child(4) {
+    text-align: right;
+}
+caption{
+    font-size: 1.15em;
+    margin: 3px;
+}

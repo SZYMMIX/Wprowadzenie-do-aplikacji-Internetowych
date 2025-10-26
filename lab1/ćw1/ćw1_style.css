@@ -1,21 +1,44 @@
 body {
-    background-color: #B77466;
+    background-color: #493728;
+    padding: 0px 30px;
 }
 
 img {
     height: auto;
-    width: 15vw;
+    width: 300px;
     border-radius: 4px;
+    max-width: 100%;
 }
 
-header p {
+header > h1{
+    font-size: 2em;
+    color: #bd9f81;
+}
+
+header > p {
     font-weight: bold;
+    font-size: 1.3em;
+    color: #95b6c7;
 }
 
-article p {
-    color: #e1b99fe1;
+article {
+    max-width: 90ch;
 }
 
-header h1 {
-    color: #44392edb;
+article > p {
+    color: #a7acaf;
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+@media screen and (width <= 950px) {
+  img {
+    width: 250px;
+}
+}
+
+@media screen and (width <= 700px) {
+  img {
+    width: 200px;
+}
 }
