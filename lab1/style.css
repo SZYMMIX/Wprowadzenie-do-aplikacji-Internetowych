@@ -17,13 +17,8 @@ body {
 
 a {
       text-decoration: none;
-      color: black;
       font-size: 1.3em;
       display: flex;
-}
-
-a:visited {
-      color: black
 }
 
 header {
@@ -33,4 +28,16 @@ header {
 
 main {
       display: flex;
+}
+
+.red {
+      color: rgba(255, 0, 0, 0.558);
+}
+
+.blue {
+      color: rgba(0, 0, 255, 0.514);
+}
+
+.yellow {
+      color: rgba(237, 237, 2, 0.803);
 }
