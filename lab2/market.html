@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Market | Cyber-Codex</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+    <header class="cyber-header">
+        <div class="header-left">
+            <div class="header-logo"><a href="index.html"><img src="assets/images/logo-samurai.png" alt="Logo"></a></div>
+            <nav class="cyber-nav">
+                <ul>
+                    <li><a href="market.html" class="active">Market</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="chronicle.html">Chronicle</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="death-counter"><span class="count">0030</span><span class="label">Today's<br>Deaths</span></div>
+    </header>
+
+    <main>
+        <section id="view-selection" class="view-section">
+            <div class="market-header">
+                <h1>Black Market</h1>
+                <p>The city's heartbeat is a flatline of data streams and 
+                    back-alley deals. Every job is a risk, every client a ghost. 
+                    Where you plug in determines who you become. 
+                    Read the chatter, pick your poison.
+                </p>
+            </div>
+
+            <div class="paths-container">
+                <article class="path-card streetkid">
+                    <h2>Streetkid</h2>
+                    <div class="card-image-wrapper">
+                         <img src="assets/images/market/v-streetkid.png" alt="Streetkid V">
+                    </div>
+                    <p>You trust your chrome, your gut, and the fixer who pays on time. This is about reputation, freedom, and surviving another day 
+                        on your own terms. 
+                        The streets are calling.
+                        You gonna answer?
+                    </p>
+                    <button class="cyber-btn black-btn path-btn" data-path="streetkid">Jack In</button>
+                </article>
+
+                <div class="vertical-separator">
+                    <img src="assets/images/breakline.png" alt="Separator">
+                </div>
+
+                <article class="path-card corpo">
+                    <h2>Corpo</h2>
+                    <div class="card-image-wrapper">
+                        <img src="assets/images/market/v-corpo.png" alt="Corpo V">
+                    </div>
+                    <p>You prefer clean contracts, NDAs, and the unlimited resources of a megacorp. This is about power, precision, and climbing a ladder made of glass and steel. Your ambition is your greatest asset.
+Ready to invest?</p>
+                    <button class="cyber-btn black-btn path-btn" data-path="corpo">Access Secure Network</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="view-job-board" class="view-section hidden dark-bg">
+    
+            <h3 class="board-title">FIXER'S JOB BOARD</h3>
+            
+            <div class="board-layout">
+                
+                <button class="nav-arrow prev" id="prev-job">&lt;</button>
+
+                <div class="job-card-container">
+                    
+                    <button class="back-tab" title="Back">
+                        ←
+                    </button>
+
+                    <div class="job-content">
+                        <h4 id="job-title">Data Heist: "The Glitch"</h4>
+                        <div class="job-divider"></div>
+                        
+                        <p id="job-desc">
+                            A corpo suit lost a data shard in a back-alley poker game. 
+                            My client wants it before he even realizes it's gone. 
+                            Low-risk, fast eddies.
+                        </p>
+
+                        <div class="job-footer">
+                            <p class="reward" id="job-reward">REWARD: 15,000 €$</p>
+                            <button class="cyber-btn outline-btn" id="signup-btn">SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="nav-arrow next" id="next-job">&gt;</button>
+
+            </div>
+        </section>
+
+        <section id="view-application" class="view-section hidden dark-bg">
+            <div class="form-card-container">
+                
+                <button type="button" class="back-tab back-arrow" title="Back">
+                    ←
+                </button>
+
+                <div class="form-content">
+                    <h3 class="form-header">
+                        SUBMITTING CREDENTIALS FOR: <span id="form-job-title" class="highlight">Unknown Job</span>
+                    </h3>
+                    
+                    <div class="form-divider"></div>
+
+                    <form id="faction-form">
+                        
+                        <div class="form-group inline-group">
+                            <label for="netrunner-id">Netrunner ID:</label>
+                            <input type="text" id="netrunner-id" placeholder="user@net.nc" required>
+                            <div id="id-error" class="error-message">INVALID_PROTOCOL: Incorrect format.</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Relevant Skills (Tag your specialties):</label>
+                            <div class="checkbox-group">
+                                <label><input type="checkbox" name="skills" value="stealth"> Stealth</label>
+                                <label><input type="checkbox" name="skills" value="netrunning"> Netrunning</label>
+                                <label><input type="checkbox" name="skills" value="marksmanship"> Marksmanship</label>
+                                <label><input type="checkbox" name="skills" value="tech"> Tech</label>
+                                <label><input type="checkbox" name="skills" value="brawling"> Brawling</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Why You're the Right Gutter-rat for the Job (Briefly):</label>
+                            <textarea id="reason" rows="4" required></textarea>
+                        </div>
+
+                        <div class="form-footer-row">
+                            <label class="risk-label">
+                                <input type="checkbox" required> 
+                                I understand the risks. No refunds for flatlining.
+                            </label>
+                            
+                            <button type="submit" class="cyber-btn outline-btn glow-btn">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="cyber-footer">
+        <p>&copy; 2025 Szymon Cimochowski</p>
+        <a href="https://github.com/SZYMMIX"><img src="assets/images/github-icon.png" style="height: 30px;" alt="GitHub"></a>
+    </footer>
+
+</body>
+</html>

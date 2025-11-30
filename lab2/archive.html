@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive | Cyber-Codex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+
+    <header class="cyber-header">
+        <div class="header-left">
+            <div class="header-logo"><a href="index.html"><img src="assets/images/logo-samurai.png" alt="Logo"></a></div>
+            <nav class="cyber-nav">
+                <ul>
+                    <li><a href="market.html">Market</a></li>
+                    <li><a href="archive.html" class="active">Archive</a></li>
+                    <li><a href="chronicle.html">Chronicle</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="death-counter"><span class="count">0030</span><span class="label">Today's<br>Deaths</span></div>
+    </header>
+
+    <main>
+        <section class="gangs-section yellow-bg">
+        
+            <h1 class="archive-title">GANGS OF NIGHT CITY</h1>
+            
+            <div class="gang-display-layout">
+                
+                <div class="carousel-wrapper">
+                    
+                    <h2 id="gang-name-header">Loading...</h2>
+                    
+                    <div class="carousel-controls">
+                        <button class="nav-arrow prev" id="prev-gang">&lt;</button>
+                        
+                        <div class="gang-carousel">
+                        </div>
+                        
+                        <button class="nav-arrow next" id="next-gang">&gt;</button>
+                    </div>
+                </div>
+
+                <div class="gang-info-card">
+                    
+                    <h2 id="gang-card-title">LOADING...</h2>
+                    
+                    <div class="info-row">
+                        <strong>Territory:</strong> 
+                        <span id="gang-territory">...</span>
+                    </div>
+                    
+                    <div class="info-row">
+                        <strong>Threat level:</strong> 
+                        <span id="gang-threat">...</span>
+                    </div>
+                    
+                    <p id="gang-desc">
+                        Accessing NCPD database...
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="districts-section">
+        
+            <div class="district-top yellow-bg">
+                <h1 class="archive-title">DISTRICT SURVEILLANCE</h1>
+                
+                <h2 id="district-name">WATSON</h2>
+                
+                <div class="district-slider-controls">
+                    <button class="nav-arrow prev" id="prev-district">&lt;</button>
+                    
+                    <div class="district-main-img-wrapper">
+                        <img id="district-main-img" src="assets/images/archive/watson-main.jpg" alt="District Main">
+                    </div>
+                    
+                    <button class="nav-arrow next" id="next-district">&gt;</button>
+                </div>
+            </div>
+
+            <div class="district-bottom">
+                
+                <p id="district-desc">
+                    A district of broken dreams and second chances. Once a corporate paradise, now a melting pot of cultures, black markets, and gangs reclaiming the fallen giant.
+                </p>
+
+                <div class="district-gallery-grid">
+                    <img id="dist-img-0" src="" alt="Cam 1">
+                    <img id="dist-img-1" src="" alt="Cam 2">
+                    <img id="dist-img-2" src="" alt="Cam 3">
+                    <img id="dist-img-3" src="" alt="Cam 4">
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="cyber-footer">
+        <p>&copy; 2025 Szymon Cimochowski</p>
+        <a href="https://github.com/SZYMMIX"><img src="assets/images/github-icon.png" style="height: 30px;" alt="GitHub"></a>
+    </footer>
+
+</body>
+</html>
