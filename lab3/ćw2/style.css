@@ -10,4 +10,13 @@ form{
     display: flex;
     flex-direction: column;
     max-width: 50%;
+    gap: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }

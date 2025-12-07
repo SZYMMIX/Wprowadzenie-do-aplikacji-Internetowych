@@ -8,20 +8,24 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <form>
-        <label for="password-min-length-input">Minimalna długość hasła</label>
-        <input type="number" id="password-min-length-input" required/>
+    <form id="password-form">
+        <label for="password-min-length-input">Minimalna długość hasła:
+        <input type="number" id="password-min-length-input" name="min" required/>
+        </label>
 
-        <label for="password-max-length-input">Maksymalna długość hasła</label>
-        <input type="number" id="password-max-length-input" required max="40"/>
-        
-        <label for="upper-letters-checkbox">Czy hasło ma zawierać wielkie litery?</label>
-        <input type="checkbox" id="upper-letters-checkbox"/>
+        <label for="password-max-length-input">Maksymalna długość hasła:
+        <input type="number" id="password-max-length-input" name="max" required max="40"/>
+        </label>
 
-        <label for="special-chars-checkbox">Czy hasło ma zawierać znaki specjalne?</label>
-        <input type="checkbox" id="special-chars-checkbox"/>
+        <label for="upper-letters-checkbox">Czy hasło ma zawierać wielkie litery?
+        <input type="checkbox" name="upper" id="upper-letters-checkbox"/>
+        </label>
 
-        <input type="submit"/>
+        <label for="special-chars-checkbox">Czy hasło ma zawierać znaki specjalne?
+        <input type="checkbox" name="special" id="special-chars-checkbox"/>
+        </label>
+
+        <input type="submit" value="Wygeneruj hasło">
     </form>
 </body>
 </html>
