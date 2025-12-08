@@ -1,15 +1,22 @@
 body {
-    background-color: #333333;
+    background-color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Blokuje paski przewijania */
 }
 
 canvas {
+    height: 90vh;        /* Zajmij 90% wysokości widocznego ekranu */
+    width: auto;         /* Szerokość dobierze się sama */
+    aspect-ratio: 320/480; /* Wymuszamy proporcje oryginału */
+    
     border: 2px solid #000;
-    display: block;
     background-color: #70c5ce;
+    display: block;
+    
+    /* To sprawia, że pixel art jest ostry po skalowaniu */
+    image-rendering: pixelated; 
 }
