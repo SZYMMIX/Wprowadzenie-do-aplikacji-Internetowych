@@ -11,6 +11,12 @@ password_form.addEventListener("submit", (e) => {
 
     const min = parseInt(fields.min.value);
     const max = parseInt(fields.max.value);
+
+    if (max < min){
+        alert("Nieprawidłowe przedziały hasła");
+        return;
+    }
+
     const upper = fields.upper.checked;
     const special = fields.special.checked;
 
