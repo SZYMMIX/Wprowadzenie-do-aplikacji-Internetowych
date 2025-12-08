@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,26 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    
+    <div class="controls">
+        <input type="text" id="search-input" placeholder="Filtruj po nazwie...">
+        
+        <select id="sort-select">
+            <option value="original">Oryginalna kolejność</option>
+            <option value="asc">Rosnąco (A-Z)</option>
+            <option value="desc">Malejąco (Z-A)</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Zdjęcie</th>
+                <th>Tytuł</th>
+                <th>Opis</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
 </body>
 </html>
