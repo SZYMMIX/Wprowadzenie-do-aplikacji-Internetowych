@@ -16,12 +16,11 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .addFilterBefore(new JwtAuthFilter(), UsernamePasswordAuthenticationFilter.class)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.GET, "/api/orders/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/orders/**").authenticated()
 
                         .requestMatchers(HttpMethod.POST, "/api/orders").authenticated()
                         .requestMatchers(HttpMethod.DELETE, "/api/orders/**").authenticated()
-
-                        .anyRequest().permitAll()
+                        .requestMatchers(HttpMethod.PATCH, "/api/orders/**").authenticated()
                 );
 
         return http.build();

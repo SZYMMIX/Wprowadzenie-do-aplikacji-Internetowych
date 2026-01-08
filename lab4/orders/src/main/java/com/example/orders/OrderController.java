@@ -6,6 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/orders")
@@ -35,6 +36,30 @@ public class OrderController {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Błąd: Książka o podanym ID nie istnieje!");
         } catch (Exception e){
             return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body("Błąd: Nie można połączyć się z serwisem książek.");
+        }
+    }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<?> updateOrder(@PathVariable int id, @RequestBody Map<String, Object> updates) {
+        Order order = orderRepository.findById(id).orElse(null);
+        if (order == null) return ResponseEntity.notFound().build();
+
+        if (updates.containsKey("quantity")) {
+            order.setQuantity((Integer) updates.get("quantity"));
+        }
+
+        orderRepository.save(order);
+        return ResponseEntity.ok(order);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteOrder(@PathVariable int id){
+        if (orderRepository.existsById(id)){
+            orderRepository.deleteById(id);
+            return ResponseEntity.noContent().build();
+        }
+        else{
+            return ResponseEntity.notFound().build();
         }
     }
 }
