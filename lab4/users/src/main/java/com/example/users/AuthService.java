@@ -16,7 +16,8 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
 
-    private static final Key SECRET_KEY = Keys.secretKeyFor(SignatureAlgorithm.HS256);
+    private static final String SECRET_STRING = "mojbardzotajnykluczktorymusimiecconajmniej32znaki";
+    private static final Key SECRET_KEY = Keys.hmacShaKeyFor(SECRET_STRING.getBytes());
 
     public AuthService(UserRepository userRepository, PasswordEncoder passwordEncoder){
         this.userRepository = userRepository;
