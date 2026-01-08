@@ -1,0 +1,20 @@
+###
+GET http://localhost:8080/api/books
+
+###
+
+POST http://localhost:8080/api/books
+Content-Type: application/json
+
+{
+    "title": "Wiedźmin",
+    "author": "Sapkowski",
+    "publicationYear": 1993
+}
+###
+
+DELETE http://localhost:8080/api/books/2
+
+###
+
+GET http://localhost:8080/api/books/2
