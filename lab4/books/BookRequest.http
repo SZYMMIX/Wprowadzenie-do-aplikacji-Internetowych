@@ -5,7 +5,7 @@ GET http://localhost:8080/api/books
 
 POST http://localhost:8080/api/books
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYW5la0BzZXIucGwiLCJpYXQiOjE3Njc4NTMxMDQsImV4cCI6MTc2Nzg1NjcwNH0.FSsyYV7RIG-msOqHFDwgoNLrSe8jUYk6wMPg_qQkL1xiQYWFVM6L5LXB5wufemd6
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzZXJvd3lAc2VyLnBsIiwiaWF0IjoxNzY3ODkxMzQwLCJleHAiOjE3Njc4OTQ5NDB9.OOaGFv5B6nPtQT2SwMuo3A9y_4Civofc3WtqDG5OyyxUrDDGQd9h6mitBggWPKG6
 
 {
     "title": "Wiedźmin",

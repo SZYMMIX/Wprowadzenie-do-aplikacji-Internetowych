@@ -3,8 +3,8 @@ POST http://localhost:3003/api/register
 Content-Type: application/json
 
 {
-  "email": "janek@ser.pl",
-  "password": "janek123"
+  "email": "serowy@ser.pl",
+  "password": "ser123"
 }
 
 ###
@@ -13,8 +13,8 @@ POST http://localhost:3003/api/login
 Content-Type: application/json
 
 {
-  "email": "janek@ser.pl",
-  "password": "janek123"
+  "email": "serowy@ser.pl",
+  "password": "ser123"
 }
 
 ###

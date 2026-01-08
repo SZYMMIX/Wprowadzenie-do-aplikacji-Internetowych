@@ -1,14 +1,30 @@
 ### GET request to example server
-GET http://localhost:3002/api/orders
+GET http://localhost:3002/api/orders/1
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzZXJvd3lAc2VyLnBsIiwiaWF0IjoxNzY3ODkxMzQwLCJleHAiOjE3Njc4OTQ5NDB9.OOaGFv5B6nPtQT2SwMuo3A9y_4Civofc3WtqDG5OyyxUrDDGQd9h6mitBggWPKG6
 
 ###
 
 POST http://localhost:3002/api/orders
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqYW5la0BzZXIucGwiLCJpYXQiOjE3Njc4NTMxMDQsImV4cCI6MTc2Nzg1NjcwNH0.FSsyYV7RIG-msOqHFDwgoNLrSe8jUYk6wMPg_qQkL1xiQYWFVM6L5LXB5wufemd6
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzZXJvd3lAc2VyLnBsIiwiaWF0IjoxNzY3ODkxMzQwLCJleHAiOjE3Njc4OTQ5NDB9.OOaGFv5B6nPtQT2SwMuo3A9y_4Civofc3WtqDG5OyyxUrDDGQd9h6mitBggWPKG6
 
 {
   "userId": 1,
   "bookId": 1,
   "quantity": 5
+}
+
+###
+
+DELETE http://localhost:3002/api/orders/1
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzZXJvd3lAc2VyLnBsIiwiaWF0IjoxNzY3ODkxMzQwLCJleHAiOjE3Njc4OTQ5NDB9.OOaGFv5B6nPtQT2SwMuo3A9y_4Civofc3WtqDG5OyyxUrDDGQd9h6mitBggWPKG6
+
+###
+
+PATCH http://localhost:3002/api/orders/4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzZXJvd3lAc2VyLnBsIiwiaWF0IjoxNzY3ODkxMzQwLCJleHAiOjE3Njc4OTQ5NDB9.OOaGFv5B6nPtQT2SwMuo3A9y_4Civofc3WtqDG5OyyxUrDDGQd9h6mitBggWPKG6
+
+{
+  "quantity": 3
 }
