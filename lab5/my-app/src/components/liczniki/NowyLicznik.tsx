@@ -9,8 +9,8 @@ const NowyLicznik: React.FC = () => {
     };
 
     return (
-        <div>
-            <div>Nowy Licznik: {licznik}</div>
+        <div style={ {margin: '15px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
+            <div style={ {fontWeight:'bold', fontSize: '1.5em'}}>Nowy Licznik: {licznik}</div>
             <Przycisk onClickHandler={zwieksz} />
         </div>
     );

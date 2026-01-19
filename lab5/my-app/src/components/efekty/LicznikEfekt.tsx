@@ -16,7 +16,7 @@ const LicznikEfekt: React.FC = () => {
     }, [licznik]);
 
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <h1>Licznik Efekt:</h1>
             <p>{licznik}</p>
             <button onClick={dodaj}>Dodaj</button>

@@ -5,7 +5,7 @@ import Produkt from './Produkt';
 
 const Koszyk: React.FC = () => {
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <h2>Koszyk</h2>
             <Produkt nazwa="Jabłko" />
             <Produkt nazwa="Gruszka" />

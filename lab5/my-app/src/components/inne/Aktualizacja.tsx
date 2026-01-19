@@ -8,7 +8,7 @@ const Aktualizacja: React.FC = () => {
     };
 
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <div>Aktualnie {produkt.nazwa} kosztuje {produkt.cena}</div>
             <button onClick={zmienCene}>Zmień cenę</button>
         </div>

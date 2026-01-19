@@ -31,7 +31,7 @@ const Odliczanie: React.FC = () => {
     const finished = counter <= 0;
 
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <h2>Odliczanie: {counter.toFixed(1)} sek</h2>
             <button 
                 onClick={toggleStart} 

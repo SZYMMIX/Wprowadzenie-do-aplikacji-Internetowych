@@ -7,15 +7,15 @@ const Ternary: React.FC = () => {
 
 
     return (
-        <>
-        <div>
-            {a ? <h1>Stwierdzenie a jest prawdziwe</h1> : <h1>Stwierdzenie a jest fałszywe</h1>}
-        </div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
+            <div>
+                {a ? <h1>Stwierdzenie a jest prawdziwe</h1> : <h1>Stwierdzenie a jest fałszywe</h1>}
+            </div>
 
-        <div>
-            {b ? <h1>Stwierdzenie b jest prawdziwe</h1> : <h1>Stwierdzenie b jest fałszywe</h1>}
+            <div>
+                {b ? <h1>Stwierdzenie b jest prawdziwe</h1> : <h1>Stwierdzenie b jest fałszywe</h1>}
+            </div>
         </div>
-        </>
     )
 }
 

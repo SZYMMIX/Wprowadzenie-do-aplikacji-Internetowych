@@ -7,7 +7,7 @@ const NowyKoszyk: React.FC = () => {
     const produkty = ["Mleko", "Chleb", "Masło", "Ser", "Wędlina"];
 
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <h2>Nowy Koszyk</h2>
             {produkty.map((name, index) => (
                 <Produkt key={index} nazwa={name}/>

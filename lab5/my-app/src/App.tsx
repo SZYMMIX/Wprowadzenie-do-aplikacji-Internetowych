@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-// Importy naszych zadań do testów (można je wyświetlić np. na stronie głównej lub osobnych podstronach)
 import Koszyk from './components/koszyk/Koszyk';
 import NowyKoszyk from './components/koszyk/NowyKoszyk';
 import Licznik from './components/liczniki/Licznik';
@@ -29,7 +28,7 @@ const Home: React.FC = () => (
             <Link to="/blog" style={{ marginRight: 10 }}>Blog</Link>
             <Link to="/dodaj">Dodaj Artykuł</Link>
         </nav>
-        <h2>Sekcja Ćwiczeń (Zadania 1-7)</h2>
+        <h2>Zadania 1-7</h2>
         
         <details><summary>Zadanie 1 (Koszyki)</summary>
             <Koszyk />

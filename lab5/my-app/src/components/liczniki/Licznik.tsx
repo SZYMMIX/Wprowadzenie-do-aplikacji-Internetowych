@@ -8,7 +8,7 @@ const Licznik: React.FC = () => {
     }
 
     return (
-        <div>
+        <div style={ {display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}}>
             <h1>Licznik</h1>
             <p>{licznik}</p>
             <button onClick={dodaj}>Dodaj</button>
